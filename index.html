@@ -12,13 +12,19 @@
 </head>
 
 <body>
-
   <div class="content-block">
-    <div class="text">:hover</div>
-    <div class="bg" id="bg-hover"></div>
+    <div class="bg" id="bg-keyframes"></div>
+    <div class="container">
+      <div class="row">
+        <button id="viewabout">About</button>
+        <div id="about" class="col hide">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolor ut voluptates dignissimos! Explicabo incidunt
+            nihil modi culpa? Non laudantium eaque repellat dolorem cupiditate quis quam fugiat enim suscipit accusamus.</p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <p>
+  <!-- <p>
     <a href="#bg-target">Click to set hash for :target</a>
   </p>
 
@@ -30,7 +36,7 @@
   <div class="content-block">
     <div class="text">animation</div>
     <div class="bg" id="bg-keyframes"></div>
-  </div>
+  </div> -->
 
 
   <!-- jQuery -->
@@ -40,6 +46,12 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
+  <script>
+      var about = document.getElementById('about');
+    $("#viewabout").click(function () {
+      about.classList.remove('hide')
+    });
+  </script>
 </body>
 
 </html>
