@@ -10,8 +10,7 @@
 		overflow:hidden;
 	}
 	.text {
-		font:30px / 30px sans-serif;
-		z-index:10;
+		font:2rem / 2rem sans-serif;
 		width:200px;
 		position:absolute;
 		top:85px;
@@ -21,11 +20,14 @@
 		text-shadow:0 0 10px #000;
     text-align:center;
 	}
+	.full {
+		height: 50vh;
+	}
 	.hide{
 		display: none;
 	}
-	.bg {
-		z-index:1; /* put it below the text */
+	.bgs {
+		z-index:-1; /* put it below the text */
 		position:absolute;
 		top:0;
 		bottom:0;
@@ -39,11 +41,12 @@
 	}
 	#viewabout{
 		margin: 25px;
-		z-index: 10;
 	}
 	#about{
-		z-index: 10;
-		color: aqua;
+		color: aquamarine;
+		text-shadow:0 0 60px #1B1;
+		font-size: 1.8rem;
+		
 	}
 	#bg-hover:hover, #bg-target:target {
 		left:-9999px;
@@ -74,3 +77,37 @@
 		50%  {left:-9999px;}
 		100% {left:0;}
 	}
+
+.blue-grey-grad{
+	background: linear-gradient(to right, #007bff, rgba(255,0,0,0), #6c757d);
+}
+
+.purple-green-grad{
+	background: linear-gradient(to right, #8444a5, rgba(255,0,0,0), #1ec13c);
+}
+
+.margin{
+	margin: 5px
+}
+
+.pad {
+	padding: 5px
+}
+
+.grad1 {
+	background: red; /* For browsers that do not support gradients */
+	background: radial-gradient(rgb(100, 17, 209), rgba(255, 255, 0, 0), rgb(4, 235, 4)); /* Standard syntax (must be last) */
+}
+
+.gradient {
+	background-image: radial-gradient(at 300px 300px, rgba(159,0,191,.1) 0, rgba(0, 191, 150, 0.233));
+}
+
+#canvas{
+	z-index: 1;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
